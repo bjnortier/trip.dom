@@ -2,7 +2,7 @@
   "name": "trip.dom",
   "version": "0.1.0",
   "description": "DOM addon for Trip",
-  "main": "build/index.js",
+  "main": "lib/index.js",
   "directories": {
     "test": "test"
   },
@@ -32,7 +32,7 @@
     "lodash.isstring": "^4.0.1",
     "lodash.keys": "^4.0.3",
     "mustache": "^2.2.1",
-    "trip.core": "^0.1.0"
+    "trip.core": "^0.5.1"
   },
   "devDependencies": {
     "babel-core": "^6.5.2",
@@ -40,7 +40,6 @@
     "babel-preset-es2015": "^6.5.0",
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
     "gulp-jscs": "^3.0.2",
     "gulp-jscs-stylish": "^1.3.0",
     "gulp-jshint": "^2.0.0",

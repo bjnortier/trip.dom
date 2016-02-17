@@ -3,10 +3,10 @@
 const keys = require('lodash.keys');
 const trip = require('trip.core');
 
-const lib = require('../../..');
+const lib = require('../../../');
 const $ = lib.$;
-const DOMScene = lib.DOMScene;
-const DOMView = lib.DOMView;
+const Scene = lib.Scene;
+const View = lib.View;
 const TextInput = lib.TextInput;
 const Text = lib.Text;
 const Select = lib.Select;
@@ -48,7 +48,7 @@ class BindingModel extends trip.Model {
 }
 
 
-class BindingView extends DOMView {
+class BindingView extends View {
 
   constructor(model, scene) {
     super(model, scene);
@@ -88,6 +88,6 @@ class BindingView extends DOMView {
 
 }
 
-const domScene = new DOMScene($('#dom'));
+const domScene = new Scene($('#dom'));
 const model = new BindingModel();
 new BindingView(model, domScene);
