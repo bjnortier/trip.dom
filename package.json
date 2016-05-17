@@ -1,8 +1,11 @@
 {
   "name": "trip.dom",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "DOM addon for Trip",
   "main": "lib/index.js",
+  "engines": {
+    "node": ">=4.2.0"
+  },
   "directories": {
     "test": "test"
   },
@@ -32,7 +35,7 @@
     "lodash.isstring": "^4.0.1",
     "lodash.keys": "^4.0.3",
     "mustache": "^2.2.1",
-    "trip.core": "^0.5.2"
+    "trip.core": "^0.5.3"
   },
   "devDependencies": {
     "babel-core": "^6.5.2",
