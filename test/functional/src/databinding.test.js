@@ -8,9 +8,11 @@ const $ = lib.$;
 const Scene = lib.Scene;
 const View = lib.View;
 const TextInput = lib.TextInput;
+const NumberInput = lib.NumberInput;
 const Text = lib.Text;
 const Select = lib.Select;
 const Checkbox = lib.Checkbox;
+const Slider = lib.Slider;
 
 class BindingModel extends trip.Model {
 
@@ -20,6 +22,7 @@ class BindingModel extends trip.Model {
     var fields = {
       foo: 'some string',
       bar: 'b',
+      fob: 5,
       baz: true,
       bob: 1,
     };
@@ -62,22 +65,29 @@ class BindingView extends View {
         new TextInput(this.model, 'foo'),
         new TextInput(this.model, 'foo'),
         new Text(this.model, 'foo'),
+        '<hr>',
         new Select(this.model, 'bar'),
         new Select(this.model, 'bar'),
         new Text(this.model, 'bar'),
+        '<hr>',
+        new Slider(this.model, 'fob', { step: 0.5 }),
+        new NumberInput(this.model, 'fob', {step: 2}),
+        new Text(this.model, 'fob'),
+        '<hr>',
         new Select(this.model, 'bob'),
         new Select(this.model, 'bob'),
         new Text(this.model, 'bob'),
+        '<hr>',
         new Checkbox(this.model, 'baz'),
         new Checkbox(this.model, 'baz'),
         new Text(this.model, 'baz'),
       ]
     };
 
-    var template =
-      '{{#bindings}}' +
-        '<div>{{{.}}}</div>' +
-      '{{/bindings}}';
+    var template = `
+      {{#bindings}}
+        <div>{{{.}}}</div>
+      {{/bindings}}`;
 
     this.toHtml(template, view);
   }
