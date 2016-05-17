@@ -3,6 +3,9 @@
   "version": "0.2.3",
   "description": "DOM addon for Trip",
   "main": "lib/index.js",
+  "engines": {
+    "node": ">=4.2.0"
+  },
   "directories": {
     "test": "test"
   },
