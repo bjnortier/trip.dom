@@ -49,7 +49,6 @@ class BindingModel extends trip.Model {
 
 }
 
-
 class BindingView extends View {
 
   constructor(model, scene) {
@@ -97,6 +96,13 @@ class BindingView extends View {
 
 }
 
-const domScene = new Scene('#dom');
-const model = new BindingModel();
-new BindingView(model, domScene);
+class BindingController extends trip.Controller {
+
+  constructor() {
+    super(new BindingModel());
+    this.addView(new Scene('#dom'), BindingView);
+  }
+
+}
+
+new BindingController();
