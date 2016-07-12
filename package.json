@@ -35,7 +35,7 @@
     "lodash.isstring": "^4.0.1",
     "lodash.keys": "^4.0.3",
     "mustache": "^2.2.1",
-    "trip.core": "^0.5.3"
+    "trip.core": "^0.5.4"
   },
   "devDependencies": {
     "babel-core": "^6.5.2",
