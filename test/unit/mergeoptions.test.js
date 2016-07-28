@@ -3,7 +3,7 @@
 const chai = require('chai');
 const assert = chai.assert;
 
-const lib = require('../../');
+const lib = require('../../src');
 const mergeOptions = lib.mergeOptions;
 
 describe('options merge', function() {
