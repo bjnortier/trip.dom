@@ -3,7 +3,7 @@
 const chai = require('chai');
 const assert = chai.assert;
 
-const lib = require('../../');
+const lib = require('../../src');
 const mergeOptions = lib.mergeOptions;
 
 describe('options merge', function() {
@@ -44,13 +44,13 @@ describe('options merge', function() {
       {class: 'foo', style: 'height: 100%;', id: 'a4f', draggable: true},
       {class: 'bar baz', style: 'width: 30%;', tag: 'tr'},
       criteria),
-        {
-          class: 'foo bar baz',
-          style: 'height: 100%; width: 30%;',
-          id: 'a4f',
-          draggable: true,
-          tag: 'tr'
-        });
+      {
+        class: 'foo bar baz',
+        style: 'height: 100%; width: 30%;',
+        id: 'a4f',
+        draggable: true,
+        tag: 'tr',
+      });
 
   });
 

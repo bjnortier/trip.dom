@@ -3,7 +3,7 @@
 const keys = require('lodash.keys');
 const trip = require('trip.core');
 
-const lib = require('../../../');
+const lib = require('../../../src');
 const Scene = lib.Scene;
 const View = lib.View;
 const TextInput = lib.TextInput;
@@ -79,7 +79,7 @@ class BindingView extends View {
         new Checkbox(this.model, 'baz'),
         new Checkbox(this.model, 'baz'),
         new Text(this.model, 'baz'),
-      ]
+      ],
     };
 
     var template = `
