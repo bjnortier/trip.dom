@@ -79,7 +79,7 @@ class BindingView extends View {
         new Checkbox(this.model, 'baz'),
         new Checkbox(this.model, 'baz'),
         new Text(this.model, 'baz'),
-      ]
+      ],
     };
 
     var template = `
