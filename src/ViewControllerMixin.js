@@ -22,6 +22,7 @@ function ViewControllerMixin(view) {
       events = view.events || {};
     }
 
+    view.$el.off();
     for (var key in events) {
       if (events.hasOwnProperty(key)) {
         let firstSpaceIndex = key.indexOf(' ');
